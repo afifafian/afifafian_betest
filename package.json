@@ -10,15 +10,15 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://gitlab.com/afifafian/afifafian_betest.git"
+    "url": "git+https://github.com/afifafian/afifafian_betest.git"
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
   "bugs": {
-    "url": "https://gitlab.com/afifafian/afifafian_betest/issues"
+    "url": "https://github.com/afifafian/afifafian_betest/issues"
   },
-  "homepage": "https://gitlab.com/afifafian/afifafian_betest#readme",
+  "homepage": "https://github.com/afifafian/afifafian_betest#readme",
   "dependencies": {
     "@kafkajs/confluent-schema-registry": "^3.3.0",
     "bcryptjs": "^2.4.3",

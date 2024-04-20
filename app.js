@@ -16,9 +16,4 @@ app.use(morgan('dev'));
 app.use(routes);
 app.use(errorHandler);
 
-const obj = {
-  username: "afifafian"
-};
-console.log(JSON.stringify(obj));
-
 export default app;
