@@ -15,7 +15,11 @@
 * Clone the Repository
 * Make an environment file (.env) using the values given in the `Environment` section below
 * Install the dependencies using `npm install` command
-* Start to run this app by using `npm start` command
+* Start to run this app by using `npm run start` command
+
+## How to run unit test:
+
+* Start to run the test by using `npm run test` command
 ### Environment: ###
 
 * PORT=4001
