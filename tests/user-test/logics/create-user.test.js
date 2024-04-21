@@ -20,7 +20,7 @@ describe('UNIT TEST: CREATE USER LOGIC', () => {
 		account_number: "39459"
 	};
 
-  test('controller should call user repository createUser method once', async () => {
+  test('logic should call user repository createUser method once', async () => {
 		// Action
 		await UserLogic.createUser(mockPayload);
 		// Assert

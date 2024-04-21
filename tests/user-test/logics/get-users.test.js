@@ -15,10 +15,24 @@ describe('UNIT TEST: GET LIST USER LOGIC', () => {
 
 	const mockFilter = { account_number: '39457' };
 
-  test('controller should call user repository findUsers method once', async () => {
+	const mockResultListUser = [
+		{
+			"_id": "66233c55176e895649c84e60",
+			"userName": "mockUserName",
+			"accountNumber": "39457",
+			"emailAddress": "mockEmailAddress",
+			"identityNumber": "mockIdentityNumber",
+			"createdAt": "mockCreatedAt"
+		}
+	];
+
+	UserRepository.findUsers.mockImplementation(() => mockResultListUser);
+
+  test('logic should call user repository findUsers method once', async () => {
 		// Action
-		await UserLogic.getUsers(mockFilter);
+		const users = await UserLogic.getUsers(mockFilter);
 		// Assert
 		expect(UserRepository.findUsers).toHaveBeenCalledTimes(1);
+		expect(users).toBe(mockResultListUser);
 	});
 });

@@ -15,7 +15,7 @@ describe('UNIT TEST: DELETE USER LOGIC', () => {
 
 	const mockId = '66234d1b4ee2351df21e2383';
 
-  test('controller should call user repository deleteUser method once', async () => {
+  test('logic should call user repository deleteUser method once', async () => {
 		// Action
 		await UserLogic.deleteUser(mockId);
 		// Assert

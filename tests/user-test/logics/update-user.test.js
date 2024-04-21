@@ -21,7 +21,7 @@ describe('UNIT TEST: UPDATE USER LOGIC', () => {
 		account_number: "39459"
 	};
 
-  test('controller should call user repository updateUser method once', async () => {
+  test('logic should call user repository updateUser method once', async () => {
 		// Action
 		await UserLogic.updateUser(mockId, mockPayload);
 		// Assert
